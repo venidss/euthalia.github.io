@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Euthalia Crafts</title>
+</head>
+<body>
+    <header data-aos="slide-down">
+        <a href="index.html" class="logo">e<span>c</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="conatact">Contact</a></li>
+        </ul>
+    </header>
+
+    <div id="head">
+        <div class="container">
+            <div class="product">
+                <h1 data-aos="zoom-in-up">Our<span> Products</span></h1>
+            </div>
+            <div class="items">
+                <div data-aos="zoom-in-up">
+                    <img src="image/item 1.png">
+                    <h1>Item 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maxime beatae corporis suscipit.<br> Unde ratione amet es</p>                </div>
+
+                <div data-aos="zoom-in-up">
+                    <img src="image/item 2.png">
+                    <h1>Item 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maxime beatae corporis suscipit.<br> Unde ratione amet es</p>                </div>
+
+                <div data-aos="zoom-in-up">
+                    <img src="image/item 3.png">
+                    <h1>Item 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maxime beatae corporis suscipit.<br> Unde ratione amet es</p>                </div>
+
+                <div data-aos="fade-left">
+                    <img src="image/item 4.png">
+                    <h1>Item 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maxime beatae corporis suscipit.<br> Unde ratione amet es</p>                </div>
+
+                <div data-aos="fade-left">
+                    <img src="image/item 5.png">
+                    <h1>Item 5</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maxime beatae corporis suscipit.<br> Unde ratione amet es</p>                </div>
+
+                <div data-aos="fade-left">
+                    <img src="image/item 6.png">
+                    <h1>Item 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Maxime beatae corporis suscipit.<br> Unde ratione amet es</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY  > 0);
+        })
+    </script>
+</body>
+</html>

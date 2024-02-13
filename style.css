@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', san-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0; 
+    padding: 0; 
+    background: rgba(0, 0, 0, 0.5) url('image/bg.jpg') center/cover no-repeat fixed;
+    font-family: 'Poppins', sans-serif; 
+    overflow-x: hidden; 
+    background-blend-mode: darken;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #011F4b;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .logo span{
+    color: #4adede;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+
+.container{
+    padding: 10px 10%;
+}
+
+.header-text{
+    text-align: center;
+    margin-top: 20%;
+    padding: 20px 20px;
+    transition: 0.6s;
+    color: whitesmoke;
+}
+
+.header-text h1{
+    font-size: 80px;
+}
+.header-text span{
+    color: #4adede;
+}
+
+.header-text button{
+    margin-top: 20px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border-color: black;
+    border: solid;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.header-text button:hover{
+    background-color: #011F4b;
+}
+.header-text button:active{
+    opacity: 0.8;
+}
+ /*--------Order html----------*/
+ .product{
+    text-align: center;
+    margin-top: 15%;
+    padding: 20px 20px;
+    transition: 0.6s;
+    color: whitesmoke;
+    font-size: 22px;
+    word-spacing: 10px;
+ }
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 290px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+ .items div{
+    background: #1134a6;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 50px;
+ }
+
+ .items div img{
+    width: 100%;
+    border-radius: 20px;
+ }
+
+ .items div h1{
+    margin-top: 20px;
+ }
+
+ .product span{
+    color: #4adede;
+ }
+
+ /*--------Review-------*/
+
+ .feedback-text{
+    text-align: center;
+    margin-top: 15%;
+    padding: 20px 20px;
+    transition: 0.6s;
+    color: whitesmoke;
+    font-size: 22px;
+    word-spacing: 10px;
+ }
+
+ .feedback{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.feedback div{
+    background: #011F4b;
+    padding: 20px 20px;
+    font-size: 13px;
+    font-weight: 200;
+    border-right: 10px;
+    text-align: center;
+    color: whitesmoke;
+ }
+
+ .feedback div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+
+ .feedback div .fa-solid{
+    color: gold;
+    margin-top: 10px;
+ }
+
+ .feedback-text span{
+    color: #4adede;
+ }
+
+ /*----------contact---------*/
+ .sub-title{
+    text-align: center;
+    margin-top: 15%;
+    padding: 20px 20px;
+    transition: 0.6s;
+    color: whitesmoke;
+    font-size: 30px;
+    word-spacing: 10px;
+ }
+
+ .sub-title span{
+    color: #4adede;
+ }
+ .conatact-left{
+    flex-basis: 35%;
+
+ }
+
+ .conatact-right{
+    flex-basis: 60%;
+ }
+
+ .conatact-left p{
+    margin-top: 30px;
+    color: whitesmoke;
+ }
+
+ .conatact-left p i{ 
+    margin-right: 15px;
+    font-size: 22px;
+    margin-right: 15px;
+    color: #011F4b;
+ }
+ 
+ .social-icon{
+    margin-top: 30px;
+ }
+
+ .social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    color: #011F4b;
+ }
+
+ .conatact-right form{
+    width: 100%;
+ }
+
+ form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: whitesmoke;
+    font-size: 18px;
+    border-radius: 6px;
+    background: #011F4b;
+    color: whitesmoke;
+ }
+
+ .btn.btn2{
+    display: inline-block;
+    background-color: #011F4b;
+    color: whitesmoke;
+    border-radius: 10px;
+ }
+
+ form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+ }
+@media only screen and (max-width:600px) {
+    header{
+        height: 100px;
+    }
+    header .logo{
+        left: 5%;
+        position: absolute;
+        font-size: 50px;
+    }
+    .header-text h1{
+        font-size: 3rem;
+        margin-top: 40%;
+    }
+
+.header-text p{
+    font-size: 15px;
+}
+.product {
+    margin-top: 40%;
+
+}
+.feedback-text{
+    margin-top: 40%;
+}
+
+.sub-title{
+    margin-top: 40%;
+}
+}
